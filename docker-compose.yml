@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # Dịch vụ Backend API
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: real_estate_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - CLIENT_URL=http://localhost
+      # Có thể cấu hình SMTP thực tế ở đây
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_SECURE=${SMTP_SECURE:-false}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+      - NOTIFICATION_EMAIL=${NOTIFICATION_EMAIL:-chau.nguyen@primeestates.vn}
+    volumes:
+      # Gắn tệp database.sqlite ra ngoài máy host để đảm bảo tính bền vững của dữ liệu khách hàng
+      - ./server/database.sqlite:/app/database.sqlite
+    restart: always
+
+  # Dịch vụ Frontend Web Server (Nginx)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_BASE_URL=/api
+    container_name: real_estate_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always
