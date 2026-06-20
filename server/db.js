@@ -128,7 +128,7 @@ export const initDb = async () => {
           '090 123 4567',
           'chau.nguyen@primeestates.vn',
           'Tôi cam kết mang lại sự an tâm tuyệt đối và giá trị gia tăng bền vững cho quý khách hàng. Bằng việc phân tích sâu sắc các xu hướng vĩ mô, tôi không chỉ bán nhà mà còn đồng hành cùng quý vị trong việc định hình các kênh đầu tư bất động sản an toàn.',
-          '/agent_headshot.png'
+          'agent_headshot.png'
         )
       `);
 
@@ -147,7 +147,7 @@ export const initDb = async () => {
           bedrooms: 3,
           bathrooms: 3,
           status: 'Đang mở bán',
-          image: '/luxury_penthouse.png',
+          image: 'luxury_penthouse.png',
           description: 'Căn hộ Penthouse đẳng cấp thượng lưu với tầm nhìn panorama trọn vẹn sông Sài Gòn và bến du thuyền sang trọng. Thiết kế nội thất phong cách Ý tinh tế, nội thất bàn giao cao cấp từ các thương hiệu hàng đầu thế giới.',
           highlights: JSON.stringify(['View sông trực diện', 'Bến du thuyền tư nhân', 'Quản lý bởi Marriott', 'Sở hữu lâu dài']),
           is_featured: 1
@@ -165,7 +165,7 @@ export const initDb = async () => {
           bedrooms: 4,
           bathrooms: 4.5,
           status: 'Đang bàn giao',
-          image: '/luxury_townhouse.png',
+          image: 'luxury_townhouse.png',
           description: 'Nhà phố thương mại (shophouse) kiến trúc châu Âu đương đại, thích hợp kinh doanh sầm uất tại tầng trệt và sinh sống cao cấp tại các tầng trên. Nằm trong quần thể công viên trung tâm quy mô rộng lớn.',
           highlights: JSON.stringify(['Mặt tiền đường lớn', 'Hai lối đi riêng biệt', 'Thiết kế thông minh', 'Tiện ích nội khu 5 sao']),
           is_featured: 1
@@ -183,7 +183,7 @@ export const initDb = async () => {
           bedrooms: 4,
           bathrooms: 5,
           status: 'Sắp mở bán',
-          image: '/luxury_resort_villa.png',
+          image: 'luxury_resort_villa.png',
           description: 'Biệt thự nghỉ dưỡng 6 sao trực diện biển Phú Quốc, được vận hành bởi thương hiệu danh tiếng Regent. Sở hữu hồ bơi vô cực dài 20m riêng biệt, hồ cảnh quan yên bình và không gian mở hòa quyện cùng thiên nhiên.',
           highlights: JSON.stringify(['Trực diện biển', 'Vận hành bởi Regent', 'Cam kết doanh thu chia sẻ', 'Hồ bơi vô cực riêng']),
           is_featured: 1
@@ -201,7 +201,7 @@ export const initDb = async () => {
           bedrooms: 2,
           bathrooms: 2,
           status: 'Đang mở bán',
-          image: '/luxury_penthouse.png',
+          image: 'luxury_penthouse.png',
           description: 'Căn hộ biểu tượng kiến trúc Diagrid đỉnh cao duy nhất tại Hải Phòng, đạt giải thưởng công trình xanh LEED. Vị trí ngã tư Lê Hồng Phong kết nối sân bay Cát Bi chỉ trong 5 phút.',
           highlights: JSON.stringify(['Kiến trúc Diagrid độc đáo', 'Tiện ích Smart Home', 'Chứng chỉ xanh quốc tế', 'Ngay trung tâm TP']),
           is_featured: 0
@@ -219,7 +219,7 @@ export const initDb = async () => {
           bedrooms: 5,
           bathrooms: 6,
           status: 'Sắp mở bán',
-          image: '/luxury_resort_villa.png',
+          image: 'luxury_resort_villa.png',
           description: 'Dinh thự nghệ thuật Haute Couture phiên bản giới hạn được thiết kế trực tiếp bởi nhà thiết kế huyền thoại Elie Saab. Tọa lạc biệt lập bên sông, mang tính riêng tư tuyệt đối cho giới tinh hoa.',
           highlights: JSON.stringify(['Thiết kế bởi Elie Saab', 'Bến du thuyền định danh', 'Hầm rượu vang sang trọng', 'An ninh 3 lớp nghiêm ngặt']),
           is_featured: 1
@@ -237,7 +237,7 @@ export const initDb = async () => {
           bedrooms: 3,
           bathrooms: 3,
           status: 'Đang bàn giao',
-          image: '/luxury_townhouse.png',
+          image: 'luxury_townhouse.png',
           description: 'Căn hộ sở hữu sân vườn rộng tới 30m2 trên cao (Skyland) đột phá thiết kế tại khu đô thị quốc tế Ciputra. Tầm nhìn tuyệt đẹp hướng cầu Nhật Tân và sân golf Ciputra danh giá.',
           highlights: JSON.stringify(['Sân vườn trên cao riêng biệt', 'Mật độ căn hộ cực thấp', 'Hệ thống lọc nước tại vòi', 'Khu Ciputra thượng lưu']),
           is_featured: 0

@@ -40,7 +40,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 3,
     bathrooms: 3,
     status: 'Đang mở bán',
-    image: '/luxury_penthouse.png',
+    image: 'luxury_penthouse.png',
     description: 'Căn hộ Penthouse đẳng cấp thượng lưu với tầm nhìn panorama trọn vẹn sông Sài Gòn và bến du thuyền sang trọng. Thiết kế nội thất phong cách Ý tinh tế, nội thất bàn giao cao cấp từ các thương hiệu hàng đầu thế giới.',
     highlights: ['View sông trực diện', 'Bến du thuyền tư nhân', 'Quản lý bởi Marriott', 'Sở hữu lâu dài']
   },
@@ -57,7 +57,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 4,
     bathrooms: 4.5,
     status: 'Đang bàn giao',
-    image: '/luxury_townhouse.png',
+    image: 'luxury_townhouse.png',
     description: 'Nhà phố thương mại (shophouse) kiến trúc châu Âu đương đại, thích hợp kinh doanh sầm uất tại tầng trệt và sinh sống cao cấp tại các tầng trên. Nằm trong quần thể công viên trung tâm quy mô rộng lớn.',
     highlights: ['Mặt tiền đường lớn', 'Hai lối đi riêng biệt', 'Thiết kế thông minh', 'Tiện ích nội khu 5 sao']
   },
@@ -74,7 +74,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 4,
     bathrooms: 5,
     status: 'Sắp mở bán',
-    image: '/luxury_resort_villa.png',
+    image: 'luxury_resort_villa.png',
     description: 'Biệt thự nghỉ dưỡng 6 sao trực diện biển Phú Quốc, được vận hành bởi thương hiệu danh tiếng Regent. Sở hữu hồ bơi vô cực dài 20m riêng biệt, hồ cảnh quan yên bình và không gian mở hòa quyện cùng thiên nhiên.',
     highlights: ['Trực diện biển', 'Vận hành bởi Regent', 'Cam kết doanh thu chia sẻ', 'Hồ bơi vô cực riêng']
   },
@@ -91,7 +91,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 2,
     bathrooms: 2,
     status: 'Đang mở bán',
-    image: '/luxury_penthouse.png',
+    image: 'luxury_penthouse.png',
     description: 'Căn hộ biểu tượng kiến trúc Diagrid đỉnh cao duy nhất tại Hải Phòng, đạt giải thưởng công trình xanh LEED. Vị trí ngã tư Lê Hồng Phong kết nối sân bay Cát Bi chỉ trong 5 phút.',
     highlights: ['Kiến trúc Diagrid độc đáo', 'Tiện ích Smart Home', 'Chứng chỉ xanh quốc tế', 'Ngay trung tâm TP']
   },
@@ -108,7 +108,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 5,
     bathrooms: 6,
     status: 'Sắp mở bán',
-    image: '/luxury_resort_villa.png',
+    image: 'luxury_resort_villa.png',
     description: 'Dinh thự nghệ thuật Haute Couture phiên bản giới hạn được thiết kế trực tiếp bởi nhà thiết kế huyền thoại Elie Saab. Tọa lạc biệt lập bên sông, mang tính riêng tư tuyệt đối cho giới tinh hoa.',
     highlights: ['Thiết kế bởi Elie Saab', 'Bến du thuyền định danh', 'Hầm rượu vang sang trọng', 'An ninh 3 lớp nghiêm ngặt']
   },
@@ -125,7 +125,7 @@ const FALLBACK_PROPERTIES = [
     bedrooms: 3,
     bathrooms: 3,
     status: 'Đang bàn giao',
-    image: '/luxury_townhouse.png',
+    image: 'luxury_townhouse.png',
     description: 'Căn hộ sở hữu sân vườn rộng tới 30m2 trên cao (Skyland) đột phá thiết kế tại khu đô thị quốc tế Ciputra. Tầm nhìn tuyệt đẹp hướng cầu Nhật Tân và sân golf Ciputra danh giá.',
     highlights: ['Sân vườn trên cao riêng biệt', 'Mật độ căn hộ cực thấp', 'Hệ thống lọc nước tại vòi', 'Khu Ciputra thượng lưu']
   }
@@ -138,7 +138,7 @@ const FALLBACK_AGENT = {
   phone: '090 123 4567',
   email: 'chau.nguyen@primeestates.vn',
   bio: 'Tôi cam kết mang lại sự an tâm tuyệt đối và giá trị gia tăng bền vững cho quý khách hàng. Bằng việc phân tích sâu sắc các xu hướng vĩ mô, tôi không chỉ bán nhà mà còn đồng hành cùng quý vị trong việc định hình các kênh đầu tư bất động sản an toàn.',
-  avatarUrl: '/agent_headshot.png'
+  avatarUrl: 'agent_headshot.png'
 };
 
 const LOCATIONS = ['Tất cả', 'Hà Nội', 'TP. Hồ Chí Minh', 'Phú Quốc', 'Hải Phòng'];
@@ -377,7 +377,7 @@ function App() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <img src="/logo.png" alt="Prime Estates Logo" className="w-11 h-11 rounded-xl object-cover border border-gold-500/30 shadow-sm" />
+              <img src="logo.png" alt="Prime Estates Logo" className="w-11 h-11 rounded-xl object-cover border border-gold-500/30 shadow-sm" />
               <div>
                 <span className="font-serif text-xl font-bold text-slate-900 tracking-wider">PRIME</span>
                 <span className="font-sans text-xs block text-gold-600 font-bold uppercase tracking-widest mt-[-2px]">ESTATES</span>
@@ -477,7 +477,7 @@ function App() {
       <section className="relative min-h-[85vh] flex items-center justify-center bg-slate-950 text-white overflow-hidden py-20">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/luxury_hero_bg.png" 
+            src="luxury_hero_bg.png" 
             alt="Luxury Penthouse Facade" 
             className="w-full h-full object-cover object-center opacity-45 scale-105 transition-transform duration-10000 ease-out"
           />
@@ -1026,7 +1026,7 @@ function App() {
             {/* About / Brand */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="Prime Estates Logo" className="w-9 h-9 rounded-xl object-cover border border-gold-500/20" />
+                <img src="logo.png" alt="Prime Estates Logo" className="w-9 h-9 rounded-xl object-cover border border-gold-500/20" />
                 <span className="font-serif text-lg font-bold text-white tracking-wider">PRIME ESTATES</span>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
