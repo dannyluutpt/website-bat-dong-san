@@ -64,3 +64,9 @@ Sử dụng công cụ tạo ảnh chuyên sâu để tạo ra các hình ảnh 
 - **Khởi tạo & Cấu hình:** Sử dụng command-line để cài đặt dependencies trực tiếp cho server.
 - **Tạo ảnh nghệ thuật:** Sử dụng `generate_image` với prompt mô tả phong cách kiến trúc cao cấp để lưu trữ ảnh thực tế, giúp website hoạt động sinh động ngay sau khi khởi chạy.
 - **Kiểm thử chất lượng:** Chạy lệnh `npm run build` để kiểm tra toàn bộ lỗi cú pháp của ứng dụng React. Đồng thời khởi chạy thử server Node.js bằng lệnh `node index.js` kiểm tra quá trình Seeding CSDL và khởi động cổng thành công trước khi đóng gói bàn giao.
+- **Lưu trữ & Triển khai (Mới):**
+  - Đã kết nối tài khoản GitHub của user `dannyluutpt` và khởi tạo Repo tại: `https://github.com/dannyluutpt/website-bat-dong-san`.
+  - Cấu hình base path tương đối trong `vite.config.js`.
+  - Tạo tệp tin workflow GitHub Actions `.github/workflows/deploy.yml` tự động build và deploy lên nhánh `gh-pages` để phục vụ chạy demo static online trên GitHub Pages tại URL: `https://dannyluutpt.github.io/website-bat-dong-san/`.
+  - Thực hiện push toàn bộ mã nguồn lên nhánh `main`.
+
